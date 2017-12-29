@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <title>melisa satili</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Fredericka+the+Great|Domine|Slabo+27px|Gabriela" rel="stylesheet">
+  </head>
+  <body ng-app="portfolio" ng-strict-di>
+
+    <header>
+      <nav id="header-nav" class="navbar navbar-fixed-top">
+        <div class="container">
+          <h1 class="text-center">melisa<br>satili</h1>
+            <div id="nav-section" class="row text-center">
+              <div class="col-md-3 col-sm-3 col-xs-3">
+                <a ui-sref="public.home"><img src="images/icon.png" height="50px"><br>home</a>
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-3">
+                <a ui-sref="public.about"><img src="images/icon.png" height="50px"><br>about</a>
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-3">
+                <a ui-sref="public.portfolio"><img src="images/icon.png" height="50px"><br>portfolio</a>
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-3">
+                <a ui-sref="public.contact"><img src="images/icon.png" height="50px"><br>contact</a>
+              </div>
+            </div>
+          <hr>
+        </div>
+      </nav><!-- #header-nav -->
+    </header>
+
+
+    <ui-view>
+      <div class="text-center initial-loading">
+        <h2>Loading Site...</h2>
+      </div>
+    </ui-view>
+
+    <!-- Libs -->
+    <script src="lib/jquery-2.1.4.min.js"></script>
+    <script src="lib/bootstrap.min.js"></script>
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-ui-router.min.js"></script>
+
+    <!-- Main Portfolio Module -->
+    <script src="src/portfolio.module.js"></script>
+
+    <!-- Common Module -->
+    <script src="src/common/common.module.js"></script>
+    <script src="src/common/loading/loading.component.js"></script>
+    <script src="src/common/loading/loading.interceptor.js"></script>
+
+    <!-- Public Module -->
+    <script src="src/public/public.module.js"></script>
+    <script src="src/public/public.routes.js"></script>
+    <script src="src/public/menu/menu.controller.js"></script>
+   <!--  <script src="src/public/menu-category/menu-category.component.js"></script>
+    <script src="src/public/menu-items/menu-items.controller.js"></script>
+    <script src="src/public/menu-item/menu-item.component.js"></script>
+    <script src="src/public/sign-up/sign-up.controller.js"></script>
+	<script src="src/public/my-info/my-info.controller.js"></script>
+	<script src="src/public/my-info/my-info.service.js"></script> -->
+
+  </body>
+</html>

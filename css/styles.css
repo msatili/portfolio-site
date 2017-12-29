@@ -1,0 +1,160 @@
+html, body{
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-size: 1.8em;;
+  color: #93939b;
+  /*font-family: 'Gabriela', serif;*/
+  font-family: 'Domine', serif;
+  padding-top: 250px;
+  overflow-y: scroll;
+  background-color: #ffffff;
+  background-image: url(../images/bg.png);
+  background-size: 30%;
+  background-position: right bottom; /*Positioning*/
+  /*background-repeat: no-repeat; Prevent showing multiple background images*/
+  background-attachment: fixed;
+}
+
+/*.centerblock, #content {
+  height: 100%;
+}*/
+
+
+hr {
+  color: #ffdedc;
+  border: 0px;
+  border-top: 10px solid;
+}
+
+h1 {
+  font-size: 24px;
+  padding: 30px;
+  font-family: 'Homemade Apple', cursive;
+  /*font-family: 'Fredericka the Great', cursive;*/
+}
+
+h2 {
+  /*font-weight: bold;*/
+  color: #aab7ae;
+  text-shadow: 2px 2px 2px #c6d2c6;
+}
+
+h3 {
+  font-size: 1.1em;
+  color: #aab7ae;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  /*text-shadow: 1px 1px 1px #c6d2c6;*/
+}
+
+p {
+  color: #93939b;
+}
+
+a {
+  font-size: 1em;
+  color: #93939b;
+  text-decoration: none;
+}
+
+a:hover  {
+  color: #f1b5b5;
+  text-decoration: none;
+  background-color: #ffdedc;
+}
+
+/** HEADER **/
+
+#nav-section {
+  font-size: 16px;
+  padding-top: 10px;
+}
+
+#nav-section a:hover img {
+  background-color: #000000;
+  width: 100px;
+}
+
+#header-nav {
+  border-radius: 0;
+  border: 0;
+}
+
+#header-nav > .container{
+  background-color: #ffffff;
+}
+
+/* END HEADER */
+
+
+/* HOME PAGE */
+
+#main-content {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  min-height: 100%;
+  padding-bottom: 50px;
+}
+
+#skills {
+  padding: 0;
+}
+
+#content-section {
+  padding-top: 50px;
+}
+
+.section-headers, .section-content {
+  padding-top: 20px;
+}
+
+.about-right-content {
+  padding-left: 20px;
+}
+
+#content {
+  padding-top: 20px;
+}
+
+
+/* END HOME PAGE */
+
+
+/***** Extra small devices only *****/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    padding-left: 30px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  #collapsable-nav {
+    background-color: #D8D8D8;
+  }
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+  /* End Header */
+}
+
+/***** Super extra small devices only *****/
+@media (max-width: 479px) {
+  /* Header */
+  .navbar-brand h1 {
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+  /* End Header */
+}
